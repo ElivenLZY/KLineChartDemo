@@ -1,0 +1,75 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    ver = [
+
+            // SDK And Tools
+            compileSdkVersion               : 28,
+            minSdkVersion                   : 15,
+            targetSdkVersion                : 28,
+            appPacageName                   : "com.jjtech.chatblock",
+            appVersionCode                  : 2,
+            appVersionName                  : "2.0.0",
+            //Dependencies
+            supportLibraryVersion           : "28.0.1",
+
+            //ThirdPart
+            leakcanaryVer                   : "1.5.4",
+            butterknifeVer                  : "8.8.1",
+            gsonVer                         : "2.7",
+            okgoVer                         : "3.0.4",
+            okrx2Ver                        : "2.0.2",
+            rxandroidVer                    : "2.0.1",
+            rxjavaVer                       : "2.1.1",
+            rxbindingVer                    : "2.1.1",
+            greendaoVer                     : "3.2.2",
+            glideVer                        : "4.8.0",
+            glideTransformationsVer         : "3.1.1",
+            baseRecyclerViewAdapterHelperVer: "2.9.30",
+            smartRefreshLayoutVer           : "1.1.0-alpha-2",
+            multiplestatusviewVer           : "1.4",
+            ultraviewpagerVer               : "1.0.7.1@aar",
+            eventbusVer                     : "3.1.1",
+            SwipeDelMenuLayout              : "V1.3.0",
+            rxpermissions                   : "0.10.2",
+            rxeasyhttp                      : "2.1.0",
+            utilcode                        : "1.21.0",
+            logger                          : "2.2.0",
+            SpinKit                         : "1.1.0",
+            autolayout                      : "1.4.5",
+            barlibrary                      : "2.3.0",
+            easyrecyclerview                : "4.4.3",
+            zxing                           : "2.2",
+            vasDolly                        : "2.0.1",
+            wheelPicker                     : "1.1.2",
+            room_version                    : "1.1.1",
+            hotfix                          : "3.2.4",
+    ]
+
+}

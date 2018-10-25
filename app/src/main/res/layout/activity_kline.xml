@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kline_bg"
+    android:orientation="vertical"
+    tools:context=".KLineActivity">
+
+    <include layout="@layout/include_k_line_top" />
+
+    <com.lzy.klinechartdemo.widget.KLineMenuView
+        android:id="@+id/tab_kline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#131F2F"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" />
+
+    <com.github.fujianlian.klinechart.KLineChartView
+        android:id="@+id/kLineChartView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_141D32"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingTop="16dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="16dp"
+    tools:showIn="@layout/activity_kline">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="$ 0"
+            android:textColor="#00CE44"
+            android:textSize="28sp"
+            tools:text="$ 0.1059" />
+
+        <TextView
+            android:id="@+id/tv_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="7dp"
+            android:gravity="right"
+            android:maxWidth="50dp"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#FF00CE44"
+            android:textSize="12sp"
+            tools:text="+5.99%" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高"
+                android:textColor="#B3DFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_high"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="$0"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                tools:text="$90,000.000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低"
+                android:textColor="#B3DFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_low"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="$0"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                tools:text="$900.000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24H"
+                android:textColor="#B3DFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_24hour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="$0"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                tools:text="$900.000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
