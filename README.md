@@ -14,5 +14,3 @@ tips2，该库已经放到我们线上区块链的APP里在用了，目前没发
 等等...<br>
 更多具体用法查看demo，注释的很清楚的。
 
-##特别感谢:<br>
-fujianlian的[KLineChart](https://github.com/fujianlian/KLineChart)
